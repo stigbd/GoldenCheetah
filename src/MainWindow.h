@@ -176,6 +176,7 @@ class MainWindow : public QMainWindow
         void uploadTP();
         void downloadTP();
 #endif
+        void synchronizeGC();
         void importFile();
         void splitRide();
         void mergeRide();

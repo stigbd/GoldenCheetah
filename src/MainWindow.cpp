@@ -72,6 +72,7 @@
 #include "CalDAV.h"
 #endif
 #include "CalendarDownload.h"
+#include "GCSynchronizeDialog.h"
 
 // GUI Widgets
 #include "Tab.h"
@@ -611,6 +612,10 @@ MainWindow::MainWindow(const QDir &home)
     rideMenu->addAction(tr("Split &ride..."), this, SLOT(splitRide()));
     rideMenu->addAction(tr("Merge rides..."), this, SLOT(mergeRide()));
     rideMenu->addSeparator ();
+
+    // SYNCHRONIZE MENU
+    QMenu *synchronizeMenu = menuBar()->addMenu(tr("S&ynchronize"));
+    synchronizeMenu->addAction(tr("Synchronize with &Garmin Connect"), this, SLOT(synchronizeGC()), tr("Ctlr+G"));
 
     // TOOLS MENU
     QMenu *optionsMenu = menuBar()->addMenu(tr("&Tools"));
@@ -1789,6 +1794,11 @@ MainWindow::downloadTP()
 }
 #endif
 
+void MainWindow::synchronizeGC()
+{
+    GCSynchronizeDialog synchronizeGC(currentTab->context);
+    synchronizeGC.exec();
+}
 
 /*----------------------------------------------------------------------
  * Utility
