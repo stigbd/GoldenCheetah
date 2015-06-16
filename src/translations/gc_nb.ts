@@ -36,27 +36,28 @@
     <message>
         <location filename="../AboutDialog.cpp" line="25"/>
         <source>About GoldenCheetah</source>
-        <translation type="unfinished"></translation>
+        <translation>Om GoldenCheetah</translation>
     </message>
     <message>
         <location filename="../AboutDialog.cpp" line="36"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../AboutDialog.cpp" line="37"/>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Versjon</translatorcomment>
+        <translation>Versjon</translation>
     </message>
     <message>
         <location filename="../AboutDialog.cpp" line="39"/>
         <source>Config</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasjon</translation>
     </message>
     <message>
         <location filename="../AboutDialog.cpp" line="41"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Bidragsytere</translation>
     </message>
 </context>
 <context>
