@@ -1932,7 +1932,7 @@ Press Next to Continue
     <name>AthleteConfig</name>
     <message>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <source>Power Zones</source>

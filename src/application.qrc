@@ -84,6 +84,7 @@
         <file>translations/gc_cs.qm</file>
         <file>translations/gc_es.qm</file>
         <file>translations/gc_pt.qm</file>
+        <file>translations/gc_nb.qm</file>
         <file>xml/charts.xml</file>
         <file>xml/metadata.xml</file>
         <file>xml/train-layout.xml</file>
@@ -142,6 +143,5 @@
         <file>images/sidebar/folder.png</file>
         <file>images/sidebar/movie.png</file>
         <file>images/sidebar/power.png</file>
-        <file>translations/gc_nb.qm</file>
     </qresource>
 </RCC>
