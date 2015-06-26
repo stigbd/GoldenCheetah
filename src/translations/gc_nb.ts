@@ -878,7 +878,7 @@ Press Next to Continue
     </message>
     <message>
         <source>Heart Rate Ref</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Puls </translation>
     </message>
     <message>
         <source>Cadence Ref</source>
@@ -890,31 +890,31 @@ Press Next to Continue
     </message>
     <message>
         <source>W&apos; Balance (kJ)</source>
-        <translation type="unfinished"></translation>
+        <translation>W&apos; balanse (kj)</translation>
     </message>
     <message>
         <source>Watts</source>
-        <translation type="unfinished"></translation>
+        <translation>Watt</translation>
     </message>
     <message>
         <source>BPM</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>SmO2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>RPM</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Percent</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosent</translation>
     </message>
     <message>
         <source>Slope</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Stigningstall</translation>
     </message>
     <message>
         <source>KPH</source>
@@ -938,47 +938,47 @@ Press Next to Continue
     </message>
     <message>
         <source>Meters</source>
-        <translation type="unfinished"></translation>
+        <translation>Meter</translation>
     </message>
     <message>
         <source>Feet</source>
-        <translation type="unfinished"></translation>
+        <translation>Fot</translation>
     </message>
     <message>
         <source>** Minimum CP=%1 **</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>** Check W&apos; is set correctly **</source>
-        <translation type="unfinished"></translation>
+        <translation>** Sjekk om oppgitt W&apos; er korrekt **</translation>
     </message>
     <message>
         <source>Tau=%1, CP=%2, W&apos;=%3, %4 match &gt;2kJ (%5 kJ) %6</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Tau=%1, CP=%2, W&apos;=%3, %4 matches &gt;2kJ (%5 kJ) %6</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cadence</source>
-        <translation type="unfinished"></translation>
+        <translation>Tråkkfrekvens</translation>
     </message>
     <message>
         <source>Heartrate</source>
-        <translation type="unfinished"></translation>
+        <translation>Puls</translation>
     </message>
     <message>
         <source>Acceleration</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerasjon</translation>
     </message>
     <message>
         <source>Power Delta</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cadence Delta</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Torque Delta</source>
@@ -990,23 +990,23 @@ Press Next to Continue
     </message>
     <message>
         <source>Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Fart</translation>
     </message>
     <message>
         <source>Torque</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Power</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>W&apos;bal</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Alt/Slope</source>
@@ -1014,11 +1014,11 @@ Press Next to Continue
     </message>
     <message>
         <source>Headwind</source>
-        <translation type="unfinished"></translation>
+        <translation>Motvind</translation>
     </message>
     <message>
         <source>Temperature</source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatur</translation>
     </message>
     <message>
         <source>Anaerobic TISS</source>
@@ -1030,7 +1030,7 @@ Press Next to Continue
     </message>
     <message>
         <source>NP</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">NP</translation>
     </message>
     <message>
         <source>Vertical Oscillation</source>
@@ -1110,7 +1110,7 @@ Press Next to Continue
     </message>
     <message>
         <source>Heart Rate</source>
-        <translation type="unfinished"></translation>
+        <translation>Puls</translation>
     </message>
     <message>
         <source>Matches</source>
@@ -1158,7 +1158,7 @@ Press Next to Continue
     <name>AllPlotObject</name>
     <message>
         <source>Power</source>
-        <translation type="unfinished"></translation>
+        <translation>Effekt</translation>
     </message>
     <message>
         <source>anTISS</source>
@@ -1940,7 +1940,7 @@ Press Next to Continue
     </message>
     <message>
         <source>Heartrate Zones</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulssoner</translation>
     </message>
     <message>
         <source>Pace Zones</source>
@@ -1955,26 +1955,26 @@ Press Next to Continue
     <name>AthleteWeight</name>
     <message>
         <source>Athlete Weight</source>
-        <translation type="unfinished"></translation>
+        <translation>Utøver vekt</translation>
     </message>
     <message>
         <source>kg</source>
-        <translation type="unfinished"></translation>
+        <translation>kg</translation>
     </message>
     <message>
         <source>lbs</source>
-        <translation type="unfinished"></translation>
+        <translation>lbs</translation>
     </message>
 </context>
 <context>
     <name>AutoImportPage</name>
     <message>
         <source>+</source>
-        <translation type="unfinished"></translation>
+        <translation>+</translation>
     </message>
     <message>
         <source>-</source>
-        <translation type="unfinished"></translation>
+        <translation>-</translation>
     </message>
     <message>
         <source>Browse</source>
@@ -1982,31 +1982,31 @@ Press Next to Continue
     </message>
     <message>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Legg til</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Slett</translation>
     </message>
     <message>
         <source>Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Opp</translation>
     </message>
     <message>
         <source>Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Ned</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <source>Import Rule</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Enter directory or press [Browse] to select</source>
-        <translation type="unfinished"></translation>
+        <translation>Oppgi katalog eller trykk [Browse] for å velge</translation>
     </message>
     <message>
         <source>No autoimport</source>
@@ -2021,33 +2021,33 @@ Press Next to Continue
     <name>AverageWPK</name>
     <message>
         <source>Watts Per Kilogram</source>
-        <translation type="unfinished"></translation>
+        <translation>Effekt pr kilogram</translation>
     </message>
     <message>
         <source>w/kg</source>
-        <translation type="unfinished"></translation>
+        <translation>w/kg</translation>
     </message>
 </context>
 <context>
     <name>AvgCadence</name>
     <message>
         <source>Average Cadence</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjennomsnittlig tråkkfrekvens</translation>
     </message>
     <message>
         <source>rpm</source>
-        <translation type="unfinished"></translation>
+        <translation>rpm</translation>
     </message>
 </context>
 <context>
     <name>AvgHeartRate</name>
     <message>
         <source>Average Heart Rate</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjennomsnittlig puls</translation>
     </message>
     <message>
         <source>bpm</source>
-        <translation type="unfinished"></translation>
+        <translation>bpm</translation>
     </message>
 </context>
 <context>
