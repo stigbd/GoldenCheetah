@@ -268,7 +268,7 @@ RideNavigator::resetView()
         QString converted = QTextEdit(factory.rideMetric(factory.metricName(i))->name()).toPlainText();
 
         // from sql column name to friendly metric name
-        nameMap.insert(QString("X%1").arg(factory.metricName(i)), converted);
+        nameMap.insert(QString("%1").arg(factory.metricName(i)), converted);
 
         // from (english) internalName to (translated) Name
         internalNameMap.insert(factory.rideMetric(factory.metricName(i))->internalName(), converted);
@@ -281,7 +281,7 @@ RideNavigator::resetView()
     SpecialFields sp; // all the special fields are in here...
     foreach(FieldDefinition field, context->athlete->rideMetadata()->getFields()) {
         if (!sp.isMetric(field.name) && (field.type < 5 || field.type == 7)) {
-            nameMap.insert(QString("Z%1").arg(sp.makeTechName(field.name)), sp.displayName(field.name));
+            nameMap.insert(QString("%1").arg(sp.makeTechName(field.name)), sp.displayName(field.name));
             internalNameMap.insert(field.name, sp.displayName(field.name));
         }
     }
@@ -1265,6 +1265,11 @@ void NavigatorCellDelegate::paint(QPainter *painter, const QStyleOptionViewItem 
     }
 }
 
+static bool insensitiveLessThan(const QString &a, const QString &b)
+{
+    return a.toLower() < b.toLower();
+}
+
 ColumnChooser::ColumnChooser(QList<QString>&logicalHeadings)
 {
     // wipe away everything when you close please...
@@ -1291,11 +1296,16 @@ ColumnChooser::ColumnChooser(QList<QString>&logicalHeadings)
     small.setPointSize(8);
 
     QList<QString> buttonNames = logicalHeadings;
-    qSort(buttonNames);
+    qSort(buttonNames.begin(), buttonNames.end(), insensitiveLessThan);
 
+    QString last;
     foreach (QString column, buttonNames) {
 
+        // ignore groupby
         if (column == "*") continue;
+
+        // ignore meta fields that are metrics or duplicates
+        if (column == last || column.contains("_")) continue;
 
         // setup button
         QPushButton *add = new QPushButton(column, this);
@@ -1305,6 +1315,10 @@ ColumnChooser::ColumnChooser(QList<QString>&logicalHeadings)
 
         connect(add, SIGNAL(pressed()), clicked, SLOT(map()));
         clicked->setMapping(add, column);
+
+        // for spotting duplicates
+        last = column;
+
     }
     scrollarea->setWidget(but);
 

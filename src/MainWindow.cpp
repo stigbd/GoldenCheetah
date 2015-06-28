@@ -591,7 +591,7 @@ MainWindow::MainWindow(const QDir &home)
 #ifdef GC_HAVE_SOAP
     rideMenu->addSeparator ();
     rideMenu->addAction(tr("&Upload to TrainingPeaks"), this, SLOT(uploadTP()), tr("Ctrl+T"));
-    rideMenu->addAction(tr("Synchronise TrainingPeaks..."), this, SLOT(downloadTP()), tr(""));
+    rideMenu->addAction(tr("Synchronise TrainingPeaks..."), this, SLOT(downloadTP()), tr("Ctrl+L"));
 #endif
 
 #ifdef GC_HAVE_KQOAUTH
@@ -941,7 +941,9 @@ MainWindow::eventFilter(QObject *o, QEvent *e)
 void
 MainWindow::resizeEvent(QResizeEvent*)
 {
-#ifdef Q_OS_MAC
+// on a mac we hide/show the toolbar on fullscreen mode
+// when using QT5 since it has problems rendering
+#if (defined Q_OS_MAC) && (QT_VERSION >= 0x50201)
     if (head) {
         QRect screenSize = desktop->availableGeometry();
         if ((screenSize.width() > frameGeometry().width() || screenSize.height() > frameGeometry().height()) && // not fullscreen
@@ -1699,7 +1701,11 @@ MainWindow::saveGCState(Context *context)
     context->showSidebar = showhideSidebar->isChecked();
     //context->showTabbar = showhideTabbar->isChecked();
     context->showLowbar = showhideLowbar->isChecked();
+#if (!defined Q_OS_MAC) || (QT_VERSION >= 0x50201) // not on a Mac
     context->showToolbar = showhideToolbar->isChecked();
+#else
+    context->showToolbar = true;
+#endif
     context->searchText = searchBox->text();
     context->viewIndex = scopebar->selected();
     context->style = styleAction->isChecked();
